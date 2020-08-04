@@ -5,8 +5,8 @@ usage() {
 }
 
 generate_random_commit() {
-	# Create a new empty commit with a the random commit message
-	git commit --allow-empty -m "$(curl -s http://whatthecommit.com/index.txt)"
+  # Create a new empty commit with a the random commit message
+  git commit --allow-empty -m "$(curl -s http://whatthecommit.com/index.txt)"
 }
 
 count=
@@ -14,17 +14,17 @@ count=
 while [ "$1" != "" ]; do
   case $1 in
     -h | --help ) usage
-			            exit
-									;;
-		* )           count=$1
+                  exit
+                  ;;
+    * )           count=$1
   esac
-	shift
+  shift
 done
 
 if [ -z $count ]
 then
   usage
-	exit
+  exit
 fi
 
 for i in `seq 1 $count`
