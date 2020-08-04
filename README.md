@@ -1,6 +1,6 @@
 # Purpose
 This is a quick and fun little tool to generate arbitrarily many (currently
-empty) git commits with random commit messages.
+empty) git commits with random commit messages, curtesy to http://whatthecommit.com/.
 
 ## Usage
 ```shell
