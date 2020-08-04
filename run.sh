@@ -6,7 +6,7 @@ usage() {
 
 generate_random_commit() {
 	# Create a new empty commit with a the random commit message
-	git commit --allow-empty -m $(curl -s http://whatthecommit.com/index.txt)
+	git commit --allow-empty -m "$(curl -s http://whatthecommit.com/index.txt)"
 }
 
 count=
@@ -27,7 +27,7 @@ then
 	exit
 fi
 
-for i in {1..$count}
+for i in `seq 1 $count`
 do 
   generate_random_commit
 done
