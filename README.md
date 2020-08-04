@@ -2,5 +2,10 @@
 This is a quick and fun little tool to generate arbitrarily many (currently
 empty) git commits with random commit messages.
 
+## Usage
+```shell
+bash <(curl -s https://raw.githubusercontent.com/DominikHorn/autocommit/master/run.sh) <amount of messages>
+```
+
 ## Features
-* Quickly make your commit stats look very impressive at a glance
+1. Quickly make your commit stats look very impressive at a glance
